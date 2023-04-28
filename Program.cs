@@ -14,11 +14,16 @@ builder.Services.AddDbContext<StoreDbContext>(opts =>{
 
 //
 builder.Services.AddScoped<IStoreRepository, EFStoreRepository>();
+builder.Services.AddScoped<IOrderRepository, EFOrderRepository>();
+
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession();
+builder.Services.AddServerSideBlazor();
+builder.Services.AddScoped(sp => SessionCart.GetCart(sp));
+builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
 var app = builder.Build();
 
@@ -54,6 +59,8 @@ app.MapRazorPages();
 
 //
 app.MapDefaultControllerRoute();
+app.MapBlazorHub();
+app.MapFallbackToPage("/admin/{*catchall}", "/Admin/Index");
 app.MapRazorPages();
 
 //
