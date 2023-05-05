@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Rubio_SportsStore.Models;
+using Fuentes_SportsStore.Models;
 
-namespace Rubio_SportsStore.Components {
+namespace Fuentes_SportsStore.Components {
 	
 	public class NavigationMenuViewComponent : ViewComponent {
 		private IStoreRepository repository;

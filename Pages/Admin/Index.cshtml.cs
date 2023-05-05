@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace Rubio_SportsStore.Pages.Admin
+namespace Fuentes_SportsStore.Pages.Admin
 {
     public class IndexModel : PageModel
     {

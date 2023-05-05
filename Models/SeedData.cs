@@ -1,7 +1,7 @@
 ﻿using System.Xml.Linq;
 using Microsoft.EntityFrameworkCore;
 
-namespace Rubio_SportsStore.Models
+namespace Fuentes_SportsStore.Models
 {
 	public static class SeedData
 	{

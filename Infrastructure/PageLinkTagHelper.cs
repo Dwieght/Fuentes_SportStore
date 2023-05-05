@@ -3,9 +3,9 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.AspNetCore.Razor.TagHelpers;
-using Rubio_SportsStore.Models.ViewModels;
+using Fuentes_SportsStore.Models.ViewModels;
 
-namespace Rubio_SportsStore.Infrastructure
+namespace Fuentes_SportsStore.Infrastructure
 {
 	[HtmlTargetElement("div", Attributes = "page-model")]
 	public class PageLinkTagHelper : TagHelper

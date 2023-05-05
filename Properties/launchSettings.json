@@ -8,7 +8,7 @@
     }
   },
   "profiles": {
-    "Rubio_SportsStore": {
+    "Fuentes_SportsStore": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

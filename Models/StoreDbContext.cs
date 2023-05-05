@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace Rubio_SportsStore.Models
+namespace Fuentes_SportsStore.Models
 {
 	public class StoreDbContext: DbContext
 	{

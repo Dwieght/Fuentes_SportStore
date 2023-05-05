@@ -1,4 +1,4 @@
-﻿namespace Rubio_SportsStore.Models.ViewModels
+﻿namespace Fuentes_SportsStore.Models.ViewModels
 {
 	public class ProductsListViewModel
 	{

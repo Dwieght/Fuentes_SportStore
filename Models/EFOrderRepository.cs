@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Rubio_SportsStore.Models;
+using Fuentes_SportsStore.Models;
 
-namespace Rubio_SportsStore.Models
+namespace Fuentes_SportsStore.Models
 {
     public class EFOrderRepository : IOrderRepository
     {

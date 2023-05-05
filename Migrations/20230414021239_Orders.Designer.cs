@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Rubio_SportsStore.Models;
+using Fuentes_SportsStore.Models;
 
 #nullable disable
 
-namespace Rubio_SportsStore.Migrations
+namespace Fuentes_SportsStore.Migrations
 {
     [DbContext(typeof(StoreDbContext))]
     [Migration("20230414021239_Orders")]
@@ -24,7 +24,7 @@ namespace Rubio_SportsStore.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("Rubio_SportsStore.Models.CartLine", b =>
+            modelBuilder.Entity("Fuentes_SportsStore.Models.CartLine", b =>
                 {
                     b.Property<int>("CartLineID")
                         .ValueGeneratedOnAdd()
@@ -50,7 +50,7 @@ namespace Rubio_SportsStore.Migrations
                     b.ToTable("CartLine");
                 });
 
-            modelBuilder.Entity("Rubio_SportsStore.Models.Order", b =>
+            modelBuilder.Entity("Fuentes_SportsStore.Models.Order", b =>
                 {
                     b.Property<int>("OrderID")
                         .ValueGeneratedOnAdd()
@@ -95,7 +95,7 @@ namespace Rubio_SportsStore.Migrations
                     b.ToTable("Orders");
                 });
 
-            modelBuilder.Entity("Rubio_SportsStore.Models.Product", b =>
+            modelBuilder.Entity("Fuentes_SportsStore.Models.Product", b =>
                 {
                     b.Property<long?>("ProductID")
                         .ValueGeneratedOnAdd()
@@ -123,13 +123,13 @@ namespace Rubio_SportsStore.Migrations
                     b.ToTable("Products");
                 });
 
-            modelBuilder.Entity("Rubio_SportsStore.Models.CartLine", b =>
+            modelBuilder.Entity("Fuentes_SportsStore.Models.CartLine", b =>
                 {
-                    b.HasOne("Rubio_SportsStore.Models.Order", null)
+                    b.HasOne("Fuentes_SportsStore.Models.Order", null)
                         .WithMany("Lines")
                         .HasForeignKey("OrderID");
 
-                    b.HasOne("Rubio_SportsStore.Models.Product", "Product")
+                    b.HasOne("Fuentes_SportsStore.Models.Product", "Product")
                         .WithMany()
                         .HasForeignKey("ProductID")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -138,7 +138,7 @@ namespace Rubio_SportsStore.Migrations
                     b.Navigation("Product");
                 });
 
-            modelBuilder.Entity("Rubio_SportsStore.Models.Order", b =>
+            modelBuilder.Entity("Fuentes_SportsStore.Models.Order", b =>
                 {
                     b.Navigation("Lines");
                 });

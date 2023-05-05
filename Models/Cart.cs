@@ -1,4 +1,4 @@
-﻿namespace Rubio_SportsStore.Models
+﻿namespace Fuentes_SportsStore.Models
 {
 	public class Cart{
 		public List<CartLine> Lines { get; set; } = new List<CartLine>();

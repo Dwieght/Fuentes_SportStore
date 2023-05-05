@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace Rubio_SportsStore.Pages
+namespace Fuentes_SportsStore.Pages
 {
     public class CompletedModel : PageModel
     {

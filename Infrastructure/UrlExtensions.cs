@@ -1,4 +1,4 @@
-﻿namespace Rubio_SportsStore.Infrastructure
+﻿namespace Fuentes_SportsStore.Infrastructure
 {
 	public static class UrlExtensions
 	{

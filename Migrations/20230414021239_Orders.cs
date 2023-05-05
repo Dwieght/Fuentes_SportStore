@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace Rubio_SportsStore.Migrations
+namespace Fuentes_SportsStore.Migrations
 {
     public partial class Orders : Migration
     {
